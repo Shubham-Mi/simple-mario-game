@@ -1,0 +1,80 @@
+canvas {
+  background-color: aqua;
+}
+
+#playarea {
+  background-color: aquamarine;
+  display: inline-block;
+}
+
+#level {
+  /* height: 50px; */
+  font-size: 45pt;
+  text-align: center;
+}
+
+#controls {
+  display: inline-block;
+  background-color: red;
+}
+
+#next_level {
+  position: absolute;
+  top: 35px;
+  left: 1120px;
+}
+
+#restart_level {
+  position: absolute;
+  top: 35px;
+  left: 1350px;
+}
+
+#instructions {
+  position: absolute;
+  top: 80px;
+  left: 1020px;
+  background-color: red;
+  height: 600px;
+  width: 450px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.button {
+  background: #3498db;
+  width: 180px;
+  padding: 4px 0;
+
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-50%) translateY(-50%);
+  border-radius: 3px;
+}
+
+p {
+  font-family: "Roboto";
+  text-align: center;
+  text-transform: uppercase;
+  color: #fff;
+  user-select: none;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+
+.button:after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 100%;
+  height: 10%;
+  border-radius: 50%;
+  background-color: darken(#f1c40f, 20%);
+  opacity: 0.4;
+  bottom: -30px;
+}

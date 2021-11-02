@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Simple Mario Game</title>
+    <link rel="stylesheet" href="//brick.a.ssl.fastly.net/Roboto:400" />
+    <link rel="stylesheet" href="style.css" />
+    <script async defer src="script.js"></script>
+    <script
+      async
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.12.1/TweenMax.min.js"
+    ></script>
+  </head>
+  <body>
+    <img src="media/Mario.png" id="mario" hidden="true" />
+    <img src="media/Enemy.png" id="turtle" hidden="true" />
+    <img src="media/Princess.png" id="princess" hidden="true" />
+
+    <div id="playarea">
+      <div id="level"></div>
+      <canvas id="gamebox" height="600" width="1000"></canvas>
+    </div>
+    <div id="controls">
+      <div class="button" id="next_level" hidden>
+        <p>Next Level</p>
+      </div>
+      <div class="button" id="restart_level" hidden>
+        <p>Restart Level</p>
+      </div>
+      <div id="instructions">
+        <h1>Instructions</h1>
+        <hr />
+        <ul>
+          <li>Welcome to THE MARIO GAME.</li>
+          <li>Use the arrow keys to move Mario.</li>
+          <li>Mario can move in all four directions.</li>
+          <li>Reach the princess avoiding the enemies in between.</li>
+          <li>You can start next level only after completing this level.</li>
+          <li>On every new level, speed of turtles increases.</li>
+          <li>If game gets over, you can restart from the same level.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
